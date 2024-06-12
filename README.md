@@ -1,4 +1,3 @@
 ---
 layout: spider
-permalink: spider
 ---
