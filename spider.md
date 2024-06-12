@@ -1,8 +1,8 @@
 ---
 layout: spider
-permalink: spider
-redirect_from: "/seq2sql/spider"
----
+title: About
+weight: 1
+--- 
 
   <div class="navbar navbar-default navbar-fixed-top" id="topNavbar" role="navigation">
      <div class="container clearfix">
