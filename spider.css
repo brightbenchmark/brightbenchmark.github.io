@@ -239,7 +239,7 @@ pre {
   color: #888;
 }
 .infoCard .infoSubheadline h1 {
-  font-weight: 500;
+  font-weight: 200;
 }
 .infoCard .infoSubheadline h2,
 .infoCard .infoSubheadline p {
@@ -279,7 +279,7 @@ pre {
   color: #333;
 }
 .infoCard .infoBody >.infoHeadline h1 {
-  font-size: 1.8em;
+  font-size: 1em;
 }
 .infoCard .infoBody >.infoHeadline h2 {
   font-size: 1.4em;
