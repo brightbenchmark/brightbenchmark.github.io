@@ -263,9 +263,10 @@
   border-color: #463494;
 }
 .actionBtn {
-  display: block;
+  display: inline-block;
   margin: 10px auto;
-  max-width: 350px;
+  margin-right: 17px;
+  max-width: 100px;
   width: 100%;
   background-color: #6e54da;
   color: #fff !important;

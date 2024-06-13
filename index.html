@@ -1,10 +1,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments">
-  <meta name="keywords" content="General-Purpose Agent, Human Computer Interaction">
+    content="BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval">
+  <meta name="keywords" content="Reasoning-Intensive Retrieval Benchmark">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments</title>
+  <title>BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval</title>
   <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 
 
@@ -98,6 +98,9 @@
             <a class="navbar-item" href="https://arks-codegen.github.io/">
               ARKS
             </a>
+            <a class="navbar-item" href="https://os-world.github.io/">
+              OSWorld
+            </a>
           </div>
         </div>
       </div>
@@ -124,224 +127,1375 @@
               <div class="infoCard">
                  <div class="infoBody">
                     <div class="infoHeadline">
-                       <h2>What is Spider?</h2>
+                       <h2>BRIGHT</h2>
                     </div>
-                    <p align="left">
-                    <div class="left"> <p style="color:red;">Feb. 5th, 2024: We will no longer accept submissions for Spider 1.0 evaluations or update its leaderboard. Look forward to the release of Spider 2.0, a more realistic and challenging benchmark in the era of LLMs, expected this <s>March</s> <b>June</b>. Stay tuned!</p>
-                      Spider is a large-scale <a href="https://medium.com/@tao.yu/spider-one-more-step-towards-natural-language-interfaces-to-databases-62298dc6df3c"><i>complex and cross-domain</i></a> semantic parsing and text-to-SQL dataset annotated by 11 Yale students.
-                      The goal of the Spider challenge is to develop natural language interfaces to cross-domain databases.
-                       It consists of 10,181 questions and 5,693 unique complex SQL queries on 200 databases with multiple tables covering 138 different domains.
-                       In Spider 1.0, different complex SQL queries and databases appear in train and test sets.
-                       To do well on it, systems must <i>generalize well to not only new SQL queries but also new database schemas</i>.
-                      <hr>Why we call it "Spider"? It is because our dataset is complex and cross-domain like a spider crawling across mutiple complex(with many foreign keys) nests(databases).
-                       <a class="btn actionBtn2" href="https://www.xlang.ai/"> XLang Lab for building LM agents! </a>
-                       <a class="btn actionBtn" href="https://arxiv.org/abs/1809.08887">Spider Paper (EMNLP'18)</a>
-                       <a class="btn actionBtn" href="https://medium.com/@tao.yu/spider-one-more-step-towards-natural-language-interfaces-to-databases-62298dc6df3c">Spider Post</a>
-                      <hr><b>Related works:</b> <a href="https://ds1000-code-gen.github.io/"><b><i>DS-1000</i></b></a>, <a href="https://lm-code-binder.github.io/"><b><i>Binder</i></b></a>, <a href="https://unifiedskg.com/"><b><i>UnifiedSKG</i></b></a>, multi-turn <a href="https://yale-lily.github.io/sparc"><b><i>SParC</i></b></a> and conversational <a href="https://yale-lily.github.io/cosql"><b><i>CoSQL</i></b></a> text-to-SQL tasks.
-                       <a class="btn actionBtn2" href="https://ds1000-code-gen.github.io/">DS-1000 Challenge ('22)</a>
-                       <a class="btn actionBtn2" href="https://lm-code-binder.github.io/">Binder Framework (ICLR '23)</a>
-                       <a class="btn actionBtn2" href="https://github.com/hkunlp/unifiedskg">UnifiedSKG Framework (EMNLP'22)</a>
-                       <a class="btn actionBtn2" href="https://yale-lily.github.io/sparc">SParC Challenge (ACL'19)</a>
-                       <a class="btn actionBtn2" href="https://yale-lily.github.io/cosql">CoSQL Challenge (EMNLP'19)</a>
-                    </div>
-                    </p>
-                    <div class="infoHeadline">
-                       <h2>News</h2>
-                    </div>
-                    <p align="left">
-                    <div class="left" style="background-color: #f5f5f5">
-                       <ul>
-                         <li><span class="label label-default" style="background-color: #FF7F50"><i>02/05/2024</i></span>
-                             <p style="color:red;">We will no longer accept submissions for Spider 1.0 evaluations or update its leaderboard. The test set of Spider 1.0 has already been released (check the Spider dataset link below). Look forward to the release of Spider 2.0, a more realistic and challenging benchmark in the era of LLMs, expected this <s>March</s> <b>June</b>. Stay tuned!</p>
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>08/10/2023</i></span>
-                             Please check out <a href="https://chat.xlang.ai/">XLang language model agents</a>!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>05/27/2023</i></span>
-                             Please check out <a href="https://openreview.net/pdf?id=Wc5bmZZU9cy">Dr.Spider, a robustness evaluation benchmark based on Spider, </a> from AWS AI Lab for studying robustness in semantic parsing!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>11/20/2022</i></span>
-                             Please check out our recent work <a href="https://ds1000-code-gen.github.io/">DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation</a>. Please check out examples, data, and code on the <a href="https://ds1000-code-gen.github.io/">DS-1000 project site</a>!!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #FF7F50"><i>10/18/2022</i></span>
-                             Please check out our recent work <a href="https://lm-code-binder.github.io/">Binder: an easy but sota neural-symbolic built on GPT-3 Codex & SQL/Python interpreter</a>. It injects GPT-3 Codex prompt API calls in programming languages! Please check out Binder demo, code, paper, and video on the <a href="[https://github.com/hkunlp/unifiedskg](https://lm-code-binder.github.io/)">Binder project site</a>!!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>01/18/2022</i></span>
-                             Please check out our recent work <a href="https://arxiv.org/abs/2201.05966">UnifiedSKG: Unifying and Multi-Tasking Structured Knowledge Grounding with Text-to-Text Language Models</a>. We open-sourced simple but SOTA/strong models for 21 tasks including text-to-SQL! Please check out our code in the <a href="https://github.com/hkunlp/unifiedskg">UnifiedSKG repo</a>!!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>03/11/2021</i></span>
-                             Please check out <a href="https://arxiv.org/abs/2010.12725">a nice work</a> from Google Research (including <a href="https://github.com/google-research/language/tree/master/language/nqg">new Spider splits</a>) for studying compositional generalization in semantic parsing!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>11/15/2020</i></span>
-                             We will use <a href="https://arxiv.org/abs/2010.02840">Test Suite Accuracy</a> as our official evaluation metric for Spider, SParC, and CoSQL. Please find the evaluation code from <a href="https://github.com/taoyds/test-suite-sql-eval">here</a>. Also, Notice that Test results after May 02, 2020 are reported on the new release (collected some annotation errors).
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>08/03/2020</i></span>
-                             Corrected "column_name" and "column_name_original" mismatches in 2 dbs ("scholar" and "formula_1") in tables.json, and reparsed SQL queries (this only affects some models (e.g. RATSQL) which use our parsed SQL as the SQL input). Please download the Spider dataset from this page again.
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>06/07/2020</i></span>
-                             We corrected some annotation errors and label mismatches (not errors) in Spider dev and test sets (~4% of dev examples updated, click <a href="https://github.com/taoyds/spider/commit/25fcd85d9b6e94acaeb5e9172deadeefeed83f5e#diff-18b0a730a7b0d29b0a78a5070d971d49">here</a> for more details). Please download the Spider dataset from this page again.
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>01/16/2020</i></span>
-                             For value prediction (in order to compute the execution accuracy), your model should be able to 1) copy from the question inputs, 2) retrieve from the database content (database content is available), or 3) generate numbers (e.g. 3 in "LIMIT 3").
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>9/24/2019</i></span>
-                             <a href="https://frcchang.github.io/pub/emnlp2019.2.pdf">(Min et al., EMNLP 2019)</a> translated Spider to Chinese! Check out <a href="https://taolusi.github.io/CSpider-explorer/">the Chinese challenge page</a>.
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>5/17/2019</i></span>
-                             Our paper <a href="https://arxiv.org/abs/1906.02285">SParC: Cross-Domain Semantic Parsing in Context</a> with Salesforce Research was accepted to ACL 2019! It introduces the context-dependent version of the Spider challenge: <a href="https://yale-lily.github.io/sparc">SParC</a>!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>5/17/2019</i></span>
-                             Please report any <a href="https://github.com/taoyds/spider/issues/24">annotation errors here</a>, we really appreciate your help and will update the data release in this summer!
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>1/14/2019</i></span>
-                             The <a href="https://worksheets.codalab.org/worksheets/0x82150f426cb94c17b861ef4162817399/">submission tutorial</a> is out!.
-                         </li>
-                         <li><span class="label label-default" style="background-color: #286dc0"><i>12/17/2018</i></span>
-                             We updated 7 sqlite database files (<a href="https://github.com/taoyds/spider/issues/14">issue 14</a>). Please download the Spider dataset from this page again.
-                          </li>
-                          <li><span class="label label-default" style="background-color: #286dc0"><i>10/25/2018</i></span>
-                             The evaluation script and results were updated (<a href="https://github.com/taoyds/spider/issues/5">issue 5</a>). Please download the lastest versions of the script and papers. Also, please follow instructions in <a href="https://github.com/taoyds/spider/issues/3">issue 3</a> to generate the latest SQL parsing results (fixed a bug).
-                          </li>
-                       </ul>
-                    </div>
-                    </p>
-                    <div class="infoHeadline">
-                       <h2>Why Spider?</h2>
-                    </div>
-                    <img src="/images/spider_chart.png" alt="test image">
                     <p align="left">
                     <div class="left">
-                       As the above spider chart shows, Spider 1.0 is distinct from most of the previous semantic parsing tasks because:
-                       <ul>
-                          <li><a href="https://github.com/jkkummerfeld/text2sql-data"><i>ATIS, Geo, Academic</i></a>: Each of them contains only a single database with a limited number of SQL queries, and has exact same SQL queries in train and test splits.</li>
-                          <li><a href="https://github.com/salesforce/WikiSQL"><i>WikiSQL</i></a>: The numbers of SQL queries and tables are significantly large. But all SQL queries are simple, and each database is only a simple table without any foreign key.</li>
-                       </ul>
-                       Spider 1.0 spans the largest area in the chart, making it the first complex and cross-domain semantic parsing and text-to-SQL dataset! Read more on <a href="https://medium.com/@tao.yu/spider-one-more-step-towards-natural-language-interfaces-to-databases-62298dc6df3c">the blog post</a>.
+                     <span style="white-space: pre-line">We introduce BRIGHT, the first text retrieval benchmark that requires intensive reasoning to retrieve relevant documents. We collect 1,322 real-world queries from diverse domains (StackExchange, LeetCode, and math competitions), sourced from naturally occurring or carefully curated human data. We pair these queries with web pages linked in StackExchange answers, tagged theorems in math Olympiad questions—all of which require deliberate reasoning to identify the connections.</span><br>
+                       <a class="btn actionBtn" href="https://brightbenchmark.github.io/">Paper</a>
+                       <a class="btn actionBtn" href="https://github.com/xlang-ai/bright">Code</a>
+                       <a class="btn actionBtn" href="https://huggingface.co/datasets/xlangai/BRIGHT">Data</a>
+                       <a class="btn actionBtn" href="https://huggingface.co/datasets/xlangai/BRIGHT">Twitter</a>
                     </div>
                     </p>
-                    <div class="infoHeadline">
-                       <h2>Getting Started</h2>
+                     <div class="infoHeadline">
+                       <h2>Why BRIGHT?</h2>
                     </div>
                     <p align="left">
-                    <div class="left"> The data is split into training, development, and test sets. Download a copy of the dataset (distributed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a> license):
+                    <div class="left"> Existing retrieval benchmarks primarily consist of information-seeking queries (e.g., aggregated questions from search engines) where keyword or semantic-based retrieval is usually sufficient. However, many real-world, complex queries necessitate in-depth reasoning to identify relevant documents that go beyond surface form matching. For example, finding documentation for a coding question requires understanding the logic and syntax of the functions involved. We introduce BRIGHT to better benchmark retrieval on such challenging and realistic scenarios.
                     </div>
-                    </p>
-                    <a class="btn actionBtn inverseBtn" href="https://drive.google.com/u/0/uc?id=1iRDVHLr4mX2wQKSgA9J8Pire73Jahh0m&export=download" download>Spider Dataset</a>
-                    Details of baseline models and evaluation script can be found on the following GitHub site:
-                    <a class="btn actionBtn inverseBtn" href="https://github.com/taoyds/spider" download>Spider GitHub Page</a>
-                   <!---- 
-                   <p align="left">
-                    <div class="left">Once you have built a model that works to your expectations on the dev set,
-                       you can submit it to get official scores on the dev and a hidden test set. To preserve the
-                       integrity of test results, we do not release the test set to the public. Instead, we request
-                       you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
-                    </div>
-                    </p>
-                    <a class="btn actionBtn inverseBtn" href="https://worksheets.codalab.org/worksheets/0x82150f426cb94c17b861ef4162817399/" download>Submission Tutorial</a>
-                   ----->
-                    <div class="infoHeadline">
-                       <h2>Data Examples</h2>
-                    </div>
-                    <p align="left">
-                    <div class="left"> Some examples look like the following:
-                    </div>
-                    </p>
-                    <img src="/images/spider_examples.png" alt="test image">
-                    <div class="infoHeadline">
-                       <h2>Have Questions or Want to Contribute ?</h2>
-                    </div>
-                    <p align="left">
-                    <div class="left">Ask us questions at our <a href="https://github.com/taoyds/spider/issues">Github issues page</a> or contact <a href="https://taoyds.github.io/">Tao Yu</a>, <a href="https://ryanzhumich.github.io/">Rui Zhang</a>, or
-                       <a href="https://michiyasunaga.github.io/">Michihiro Yasunaga</a>.
-                    </div>
-                    </p>
-                    <p align="left">
-                    <div class="left">We expect the dataset to evolve. We would greatly appreciate it if you could donate us your non-private databases or SQL queries for the project.
-                    </div>
-                    </p>
-                    <div class="infoHeadline">
-                       <h2>Acknowledgement</h2>
-                    </div>
-                    <p align="left">
-                    <div class="left">We thank <a href="http://www.phontron.com/">Graham Neubig</a>, <a href="http://www.cs.cornell.edu/~tianze/">Tianze Shi</a>, <a href="http://www-personal.umich.edu/~cfdollak/">Catherine Finegan-Dollak</a>, and the anonymous reviewers for their precious comments on this project. Also, we thank <a href="https://rajpurkar.github.io/">Pranav Rajpurkar</a> for giving us the permission to build this website based on <a href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD</a>.
-                    </div>
-                    </p>
-                    <p align="left">
-                    <div class="left">Our team at the summit of the East Rock park in New Haven (The pose is "NLseq2SQL"):
-                    </div>
-                    </p>
-                 </div>
-                 <div class="infoSubheadline">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://yale-lily.github.io/spider" data-text="Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task" data-via="lilynlp" data-size="large" data-hashtags="Spider">Tweet</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                  </div>
               </div>
            </div>
-           <div class="col-md-7">
-              <div class="infoCard">
-                 <div class="infoBody">
-                    <div class="infoHeadline">
-                       <h2>Leaderboard - Execution with Values</h2>
-                    </div>
-                    <p align="left">
-                    <div class="left"> Our current models do not predict any value in SQL conditions so that we do not provide execution accuracies. However, we encourage you to provide it in the future submissions. For value prediction, your model should be able to 1) copy from the question inputs, 2) retrieve from the database content (database content is available), or 3) generate numbers (e.g. 3 in "LIMIT 3"). <i>Notice: </i> Test results after May 02, 2020 are reported on the new release (collected some annotation errors).
-                    </div>
-                    </p>
-                    <table class="table performanceTable">
-                    <tr>
-                       <th>Rank</th>
-                       <th>Model</th>
-                       <th>Test</th>
-                    </tr>
+              <div class="container-t">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="infoCard">
+                      <div class="infoBody">
+                        <div class="infoHeadline">
+                           <h2>Leaderboard - nDCG@10</h2>
+                        </div>
+                        <div class="tabs is-centered example_lst">
+                          <ul>
+                            <li class="is-active"><a title="Short document">Short document</a></li>
+<!--                            <li><a title="LLM reasoning">LLM reasoning</a></li>-->
+<!--                            <li><a title="Reranking">Reranking</a></li>-->
+                            <li><a title="Long document">Long document</a></li>
+                          </ul>
+                        </div>
+                        <script type="text/javascript">
+                          document.querySelectorAll(".example_lst li").forEach(e => {
+                            e.addEventListener("click", Click_1)
+                          })
+
+                          function Click_1(eve) {
+                            const iTxt = eve.srcElement.innerText
+                            for (let v of document.querySelectorAll(".example_lst a")) {
+                              if (iTxt === v.innerText) {
+                                v.parentElement.className = "is-active";
+                              } else {
+                                v.parentElement.className = "";
+                              }
+                            }
+                            for (let block of document.getElementsByClassName('lib_examples')) {
+                              block.style.display = (block.title === iTxt) ? 'block' : 'none';
+                            }
+                          }
+
+                        </script>
+
+                        <div title="Short document" class="lib_examples" id="BoardPanel1" style="display: block;">
+                           <md-block>
+                            We report the average nDCG@10 score across 11 datasets in BRIGHT. Apart from using the original query, retrievers can replace it with the LLM reasoning steps to retrieve relevant documents.
+                          </md-block>
+                          <table class="table performanceTable">
+                            <tr>
+                              <th>Rank</th>
+                              <th>Retriever</th>
+<!--                              <th>Details</th>-->
+                              <th>Score</th>
+                            </tr>
+
                     <tr>
                        <td>
                           <p>1</p>
-                          <span class="date label label-default">Nov 2, 2023</span>
+                          <span class="date label label-default">Jun 5, 2024</span>
                        </td>
-                       <td style="word-break:break-word;">
-                          MiniSeek
-                          <p class="institution">Anonymous</p>
-                          <span>Code and paper coming soon</span>
-                       </td>
-                       <td><b>91.2</b></td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>27.1</b></td>
                     </tr>
+
+                    <tr>
+                       <td>
+                          <p>2</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>27.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>3</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>26.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>4</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>26.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>5</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>26.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>6</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, top-100 reranking by <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a>
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>26.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>7</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, top-100 reranking by <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a>
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>26.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>8</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>25.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>9</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>25.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>10</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>25.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>11</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>25.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>12</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>25.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>13</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, top-10 reranking by <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a>
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>24.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>14</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>24.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>15</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">OpenAI</p>
+                              </td>
+                       <td><b>24.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>16</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, top-10 reranking by <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a>
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>23.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>17</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                            <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                            <p class="institution">ContextualAI</p>
+                          </td>
+                       <td><b>23.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>18</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>23.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>19</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>23.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>20</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Voyage AI</p>
+                              </td>
+                       <td><b>23.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>21</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>23.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>22</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>22.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>23</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">OpenAI</p>
+                              </td>
+                       <td><b>22.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>24</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Voyage AI</p>
+                              </td>
+                       <td><b>22.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>25</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Voyage AI</p>
+                              </td>
+                       <td><b>22.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>26</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>22.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>27</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">OpenAI</p>
+                              </td>
+                       <td><b>22.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>28</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                            <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                            <p class="institution">ContextualAI</p>
+                          </td>
+                       <td><b>22.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>29</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Voyage AI</p>
+                              </td>
+                       <td><b>22.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>30</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Cohere</p>
+                              </td>
+                       <td><b>22.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>31</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Cohere</p>
+                              </td>
+                       <td><b>22.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>32</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>22.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>33</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>21.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>34</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">OpenAI</p>
+                              </td>
+                       <td><b>21.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>35</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>21.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>36</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Cohere</p>
+                              </td>
+                       <td><b>21.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>37</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, top-10 reranking by <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a>
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>21.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>38</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Salesforce</p>
+                              </td>
+                       <td><b>21.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>39</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Beijing Academy of Artificial Intelligence</p>
+                              </td>
+                       <td><b>21.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>40</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                            <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                            <p class="institution">ContextualAI</p>
+                          </td>
+                       <td><b>21.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>41</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>21.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>42</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>21.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>43</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>21.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>44</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Beijing Academy of Artificial Intelligence</p>
+                              </td>
+                       <td><b>20.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>45</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Salesforce</p>
+                              </td>
+                       <td><b>20.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>46</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, top-100 reranking by <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>20.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>47</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>20.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>48</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>20.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>49</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                            <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                            <p class="institution">ContextualAI</p>
+                          </td>
+                       <td><b>20.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>50</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>20.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>51</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Cohere</p>
+                              </td>
+                       <td><b>20.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>52</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>20.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>53</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                            <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>
+                            <p class="institution">ContextualAI</p>
+                          </td>
+                       <td><b>20.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>54</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Beijing Academy of Artificial Intelligence</p>
+                              </td>
+                       <td><b>20.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>55</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Salesforce</p>
+                              </td>
+                       <td><b>20.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>56</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, top-10 reranking by <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a>
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>20.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>57</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>19.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>58</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>19.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>59</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Salesforce</p>
+                              </td>
+                       <td><b>19.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>60</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>19.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>61</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>19.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>62</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>18.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>63</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Beijing Academy of Artificial Intelligence</p>
+                              </td>
+                       <td><b>18.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>64</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">OpenAI</p>
+                              </td>
+                       <td><b>18.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>65</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, top-10 reranking by <a class="link" href="https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-12-v2">MiniLM</a>
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>18.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>66</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Voyage AI</p>
+                              </td>
+                       <td><b>18.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>67</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>
+                                <p class="institution">OpenAI</p>
+                              </td>
+                       <td><b>18.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>68</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, top-10 reranking by <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>18.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>69</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                            <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                            <p class="institution">ContextualAI</p>
+                          </td>
+                       <td><b>18.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>70</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>
+                                <p class="institution">Voyage AI</p>
+                              </td>
+                       <td><b>18.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>71</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>
+                                <p class="institution">Salesforce</p>
+                              </td>
+                       <td><b>17.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>72</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>, with <a class="link" href="https://www.anthropic.com/news/claude-3-family">Claude-3-Opus</a> reasoning
+                                <p class="institution">Technische Universität Darmstadt</p>
+                              </td>
+                       <td><b>17.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>73</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>
+                                <p class="institution">Cohere</p>
+                              </td>
+                       <td><b>17.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>74</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>17.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>75</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Salesforce</p>
+                              </td>
+                       <td><b>17.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>76</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>, with <a class="link" href="https://openai.com/index/gpt-4/">gpt-4-0125-preview</a> reasoning
+                                <p class="institution">Technische Universität Darmstadt</p>
+                              </td>
+                       <td><b>17.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>77</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>17.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>78</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>, with <a class="link" href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">Llama-3-70B-Instruct</a> reasoning
+                                <p class="institution">Technische Universität Darmstadt</p>
+                              </td>
+                       <td><b>16.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>79</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>, with <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a> reasoning
+                                <p class="institution">Technische Universität Darmstadt</p>
+                              </td>
+                       <td><b>16.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>80</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>16.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>81</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Cohere</p>
+                              </td>
+                       <td><b>16.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>82</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, top-10 reranking by <a class="link" href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-pro?pli=1">Gemini-1.0-pro</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>16.1</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>83</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Beijing Academy of Artificial Intelligence</p>
+                              </td>
+                       <td><b>15.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>84</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>15.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>85</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>
+                                <p class="institution">Technische Universität Darmstadt</p>
+                              </td>
+                       <td><b>15.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>86</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>, with <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a> reasoning
+                                <p class="institution">Technische Universität Darmstadt</p>
+                              </td>
+                       <td><b>14.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>87</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>14.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>88</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>
+                                <p class="institution">Beijing Academy of Artificial Intelligence</p>
+                              </td>
+                       <td><b>14.3</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>89</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, top-10 reranking by <a class="link" href="https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-12-v2">MiniLM</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>14.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>90</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, top-10 reranking by <a class="link" href="https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-12-v2">MiniLM</a>
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>14.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>91</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>, top-100 reranking by <a class="link" href="https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-12-v2">MiniLM</a>
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>12.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>92</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>, top-100 reranking by <a class="link" href="https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-12-v2">MiniLM</a>
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>12.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>93</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, top-100 reranking by <a class="link" href="https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-12-v2">MiniLM</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>9.5</b></td>
+                    </tr>
+
+                          </table>
+                        </div>
+
+                        <div title="Long document" class="lib_examples" id="BoardPanel4" style="display: none;">
+                          <md-block>
+                            We report the average nDCG@10 score across 8 datasets where short documents are aggregated into long ones (40k on average on Stack Overflow).
+                          </md-block>
+
+                          <!-- <div class="content has-text-justified"> -->
+<!--                          <md-block>-->
+<!--                            Notice: t = temperature, top-p = top-p cutoff, len = max context length-->
+<!--                          </md-block>-->
+                          <!-- </div> -->
+
+                          <table class="table performanceTable">
+                            <tr>
+                              <th>Rank</th>
+                              <th>Retriever</th>
+<!--                              <th>Details</th>-->
+                              <th>Score</th>
+                            </tr>
+
                     <tr>
                        <td>
                           <p>1</p>
-                          <span class="date label label-default">Aug 20, 2023</span>
+                          <span class="date label label-default">Jun 5, 2024</span>
                        </td>
-                       <td style="word-break:break-word;">
-                          DAIL-SQL + GPT-4 + Self-Consistency
-                          <p class="institution">Alibaba Group</p>
-                          <a class="link" href="https://arxiv.org/abs/2308.15363">(Gao and Wang et al.,'2023)</a>
-                          <a class="link" href="https://github.com/BeachWang/DAIL-SQL">code</a>
-                       </td>
-                       <td><b>86.6</b></td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>
+                                <p class="institution">Alibaba-NLP</p>
+                              </td>
+                       <td><b>27.9</b></td>
                     </tr>
-                    </table>
-                 </div>
-              </div>
-              <div class="infoCard">
-                 <div class="infoBody">
-                    <p align="left">
-                    <div class="left"> <b>Other papers used Spider (evaluated on the dev but not test set):</b>
-                      <ol>
-                        <li><a class="link" href="https://arxiv.org/abs/2206.14017">(Wang et al., KDD 2022)</a>, Alibaba DAMO</li>
-                        <li><a class="link" href="http://vldb.org/pvldb/vol15/p569-ma.pdf">(Ma et al., VLDB 2022)</a>, HKUST</li>
-                        <li><a class="link" href="https://aclanthology.org/2022.coling-1.471/">(Qin et al., COLING 2022)</a>, Alibaba DAMO</li>
-                        <li><a class="link" href="https://dl.acm.org/doi/10.14778/3446095.3446103">(Usta et al., VLDB 2021)</a>, Bilkent University</li>
-                        <li><a class="link" href="https://frcchang.github.io/pub/emnlp2019.2.pdf">(Min et al., EMNLP 2019)</a>, Westlake University, Spider in Chinese</li>
-                        <li><a class="link" href="http://web.cse.ohio-state.edu/~sun.397/docs/MISP.pdf">(Yao et al., EMNLP 2019)</a>, OSU & Facebook AI Research</li>
-                        <li><a class="link" href="https://arxiv.org/abs/1905.08407">(Shaw et al., ACL 2019)</a>, Google</li>
-                        <li><a class="link" href="https://arxiv.org/abs/1906.10816">(Shin et al., NeurlPS 2019)</a>, UC Berkeley & MSR</li>
-                        <li><a class="link" href="https://dl.acm.org/citation.cfm?id=3300105">(Weir et al., SIGMOD 2019)</a>, Brown University & TU Darmstadt</li>
-                        <li><a class="link" href="https://arxiv.org/abs/1902.00031">(Baik et al., ICDE 2019)</a>, U of Michigan & IBM</li>
-                      </ol>
+
+                    <tr>
+                       <td>
+                          <p>2</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>
+                                <p class="institution">Salesforce</p>
+                              </td>
+                       <td><b>26.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>3</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                            <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>
+                            <p class="institution">ContextualAI</p>
+                          </td>
+                       <td><b>25.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>4</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>25.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>5</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>
+                                <p class="institution">Google</p>
+                              </td>
+                       <td><b>24.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>6</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>
+                                <p class="institution">Cohere</p>
+                              </td>
+                       <td><b>22.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>7</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>
+                                <p class="institution">OpenAI</p>
+                              </td>
+                       <td><b>21.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>8</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>
+                                <p class="institution">Voyage AI</p>
+                              </td>
+                       <td><b>18.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>9</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>17.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>10</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>
+                                <p class="institution">The University of Hong Kong</p>
+                              </td>
+                       <td><b>17.7</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>11</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>
+                                <p class="institution">Technische Universität Darmstadt</p>
+                              </td>
+                       <td><b>17.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>12</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>
+                                <p class="institution">Beijing Academy of Artificial Intelligence</p>
+                              </td>
+                       <td><b>14.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>13</p>
+                          <span class="date label label-default">Jun 5, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>
+                                <p class="institution">Microsoft</p>
+                              </td>
+                       <td><b>11.4</b></td>
+                    </tr>
+                          </table>
+                        </div>
+                      </div>
                     </div>
-                    </p>
-                 </div>
+                  </div>
+                </div>
               </div>
-           </div>
         </div>
      </div>
   </div>
