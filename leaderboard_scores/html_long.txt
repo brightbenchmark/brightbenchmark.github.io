@@ -1,0 +1,168 @@
+                    <tr>
+                       <td>
+                          <p>1</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings">Google-Gecko-Text_Embedding-004</a>
+                                <p style="font-size: 15;"> <i> Google cloud AI </i> (with Max-Mean Aggregation) </p>
+                              </td>
+                       <td><b>33.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>2</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>
+                                <p style="font-size: 15;"> <i> Alibaba </i> </p>
+                              </td>
+                       <td><b>27.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>3</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>
+                                <p style="font-size: 15;"> <i> Salesforce </i> </p>
+                              </td>
+                       <td><b>26.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>4</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>
+                                <p style="font-size: 15;"> <i> ContextualAI, The University of Hong Kong, Microsoft </i> </p>
+                              </td>
+                       <td><b>26.0</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>5</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>
+                                <p style="font-size: 15;"> <i> Microsoft </i> </p>
+                              </td>
+                       <td><b>25.5</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>6</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>
+                                <p style="font-size: 15;"> <i> Voyage AI </i> </p>
+                              </td>
+                       <td><b>24.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>7</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>
+                                <p style="font-size: 15;"> <i> Google </i> </p>
+                              </td>
+                       <td><b>22.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>8</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>
+                                <p style="font-size: 15;"> <i> OpenAI </i> </p>
+                              </td>
+                       <td><b>21.9</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>9</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>
+                                <p style="font-size: 15;"> <i> Cohere </i> </p>
+                              </td>
+                       <td><b>18.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>10</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>
+                                <p style="font-size: 15;"> <i> The University of Hong Kong, University of Washington </i> </p>
+                              </td>
+                       <td><b>18.2</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>11</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>
+                                <p style="font-size: 15;"> <i> The University of Hong Kong, University of Washington </i> </p>
+                              </td>
+                       <td><b>17.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>12</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>
+                                <p style="font-size: 15;"> <i> Technische Universität Darmstadt </i> </p>
+                              </td>
+                       <td><b>17.4</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>13</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>
+                                <p style="font-size: 15;"> <i> Beijing Academy of Artificial Intelligence </i> </p>
+                              </td>
+                       <td><b>14.8</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>14</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>
+                                <p style="font-size: 15;"> <i> Microsoft </i> </p>
+                              </td>
+                       <td><b>11.4</b></td>
+                    </tr>
+
