@@ -1,93 +1,93 @@
 scores = {
     'raw': {
-        'bm25': 14.3,
-        'bge': 13.6,
-        'inst-l': 14.0,
-        'sbert': 14.6,
-        'e5': 17.5,
-        'sfr': 18.0,
-        'inst-xl': 18.6,
-        'grit': 20.6,
-        'qwen': 22.1,
-        'cohere': 16.3,
-        'openai': 17.6,
-        'voyage': 17.6,
-        'google': 19.5
+        'bm25': 14.5,
+        'bge': 13.7,
+        'inst-l': 14.2,
+        'sbert': 14.9,
+        'e5': 17.9,
+        'sfr': 18.3,
+        'inst-xl': 18.9,
+        'grit': 21.0,
+        'qwen': 22.5,
+        'cohere': 16.6,
+        'openai': 17.9,
+        'voyage': 17.9,
+        'google': 20.0
     },
     'gpt4-reason': {
-        'bm25': 26.5,
-        'bge': 21.6,
-        'inst-l': 22.9,
-        'sbert': 17.5,
-        'e5': 21.8,
-        'sfr': 21.7,
-        'inst-xl': 26.2,
-        'grit': 24.0,
-        'qwen': 24.5,
-        'cohere': 22.3,
-        'openai': 23.1,
-        'voyage': 24.4,
-        'google': 25.8,
+        'bm25': 27.0,
+        'bge': 22.0,
+        'inst-l': 23.5,
+        'sbert': 17.7,
+        'e5': 22.1,
+        'sfr': 22.0,
+        'inst-xl': 26.9,
+        'grit': 24.5,
+        'qwen': 24.8,
+        'cohere': 22.6,
+        'openai': 23.3,
+        'voyage': 24.7,
+        'google': 26.2,
     },
     'llama3-reason': {
-        'bm25': 25.3,
-        'bge': 20.3,
-        'inst-l': 22.3,
-        'sbert': 16.1,
-        'e5': 19.6,
-        'sfr': 19.7,
-        'inst-xl': 25.8,
-        'grit': 20.5,
-        'qwen': 23.1,
-        'cohere': 21.9,
-        'openai': 22.0,
-        'voyage': 22.8,
-        'google': 24.5,
+        'bm25': 25.7,
+        'bge': 20.7,
+        'inst-l': 22.7,
+        'sbert': 16.3,
+        'e5': 19.9,
+        'sfr': 20.0,
+        'inst-xl': 26.3,
+        'grit': 20.9,
+        'qwen': 23.4,
+        'cohere': 22.2,
+        'openai': 22.1,
+        'voyage': 22.9,
+        'google': 24.9,
     },
     'claude-reason': {
-        'bm25': 26.3,
-        'bge': 20.7,
-        'inst-l': 21.6,
-        'sbert': 16.1,
-        'e5': 21.1,
-        'sfr': 21.5,
-        'inst-xl': 25.8,
-        'grit': 22.8,
-        'qwen': 24.5,
-        'cohere': 21.5,
-        'openai': 22.6,
-        'voyage': 22.8,
-        'google': 25.0,
+        'bm25': 26.8,
+        'bge': 21.1,
+        'inst-l': 22.1,
+        'sbert': 16.4,
+        'e5': 21.4,
+        'sfr': 21.7,
+        'inst-xl': 26.4,
+        'grit': 23.4,
+        'qwen': 24.8,
+        'cohere': 21.9,
+        'openai': 22.7,
+        'voyage': 23.1,
+        'google': 25.6,
     },
     'grit-reason': {
-        'bm25': 19.1,
-        'bge': 15.7,
-        'inst-l': 15.7,
-        'sbert': 13.7,
-        'e5': 17.5,
-        'sfr': 17.2,
-        'inst-xl': 22.1,
-        'grit': 18.1,
-        'qwen': 19.7,
-        'cohere': 16.0,
-        'openai': 17.8,
-        'voyage': 18.5,
-        'google': 19.3,
+        'bm25': 19.4,
+        'bge': 16.0,
+        'inst-l': 15.8,
+        'sbert': 13.9,
+        'e5': 17.6,
+        'sfr': 17.4,
+        'inst-xl': 22.4,
+        'grit': 18.3,
+        'qwen': 19.9,
+        'cohere': 16.4,
+        'openai': 18.0,
+        'voyage': 18.7,
+        'google': 19.6,
     },
     'gemini-reason': {
-        'bm25': 23.5,
-        'bge': 18.4,
-        'inst-l': 20.4,
-        'sbert': 15.3,
-        'e5': 19.3,
-        'sfr': 19.9,
-        'inst-xl': 24.0,
-        'grit': 20.5,
-        'qwen': 22.3,
-        'cohere': 19.5,
-        'openai': 21.2,
-        'voyage': 22.1,
-        'google': 22.5,
+        'bm25': 23.9,
+        'bge': 18.7,
+        'inst-l': 20.8,
+        'sbert': 15.5,
+        'e5': 19.6,
+        'sfr': 20.1,
+        'inst-xl': 24.5,
+        'grit': 20.7,
+        'qwen': 22.6,
+        'cohere': 19.8,
+        'openai': 21.5,
+        'voyage': 22.4,
+        'google': 23.0,
     },
     'google-rerank': {
         'minilm': {
@@ -149,9 +149,60 @@ for k,v in scores.items():
                 }])
     else:
         raise ValueError('unsupported')
+strs += [[
+    '''                    <tr>
+                   <td>
+                      <p>{rank}</p>
+                      <span class="date label label-default">Oct 22, 2024</span>
+                   </td>
+                          <td style="word-break:break-word;">
+                            <a class="link" href="https://openreview.net/pdf?id=tZiMLgsHMu">JudgeRank</a>
+                            <p style="font-size: 15;"> <i> ICLR submission </i> </p>
+                          </td>
+                   <td><b>35.8</b></td>
+                </tr>''',
+    {
+        'score': 35.8
+    }
+],
+
+[
+    '''                    <tr>
+                   <td>
+                      <p>{rank}</p>
+                      <span class="date label label-default">Aug 28, 2024</span>
+                   </td>
+                          <td style="word-break:break-word;">
+                            <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>, with <a class="link" href="https://openai.com/index/gpt-4/">GPT-4</a> reasoning and top-100 reranking by <a class="link" href="https://huggingface.co/hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4">Llama-3.1-70B</a>
+                            <p style="font-size: 15;"> <i> Salesforce Research (proprietary code) </i> </p>
+                          </td>
+                   <td><b>30.4</b></td>
+                </tr>''',
+    {
+        'score': 30.4
+    }
+],
+
+    [
+        '''                    <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Aug 28, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                bge-large-en-v1.5 with TongSearch Reasoner v0.1 Reasoning
+                                <p style="font-size: 15;"> <i> Beijing Institute for General Artificial Intelligence (BIGAI) </i> </p>
+                              </td>
+                       <td><b>24.4</b></td>
+                    </tr>''',
+        {
+            'score': 24.4
+        }
+    ]
+]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
 print(len(strs))
 with open('html.txt','w') as f:
     for idx,s in enumerate(strs):
-        s[1]['rank'] = idx+3
+        s[1]['rank'] = idx+1
         f.write(s[0].format(**s[1])+'\n\n')
