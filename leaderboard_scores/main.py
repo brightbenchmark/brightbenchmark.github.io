@@ -187,7 +187,7 @@ strs += [[
         '''                    <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">Aug 28, 2024</span>
+                          <span class="date label label-default">Mar 4, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
                                 bge-large-en-v1.5 with TongSearch Reasoner v0.1 Reasoning
@@ -197,6 +197,22 @@ strs += [[
                     </tr>''',
         {
             'score': 24.4
+        }
+    ],
+    [
+        '''                    <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Apr 3, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                BM25 with TongSearch Reasoner 7B Reasoning
+                                <p style="font-size: 15;"> <i> Beijing Institute for General Artificial Intelligence (BIGAI) </i> </p>
+                              </td>
+                       <td><b>26.9</b></td>
+                    </tr>''',
+        {
+            'score': 26.9
         }
     ]
 ]
