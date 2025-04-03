@@ -190,7 +190,7 @@ strs += [[
                           <span class="date label label-default">Mar 4, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
-                                bge-large-en-v1.5 with TongSearch Reasoner v0.1 Reasoning
+                                <a class="link" href="https://huggingface.co/qratosone/Reasoning-Searcher">bge-large-en-v1.5 with TongSearch Reasoner v0.1 Reasoning</a>
                                 <p style="font-size: 15;"> <i> Beijing Institute for General Artificial Intelligence (BIGAI) </i> </p>
                               </td>
                        <td><b>24.4</b></td>
@@ -200,13 +200,13 @@ strs += [[
         }
     ],
     [
-        '''                    <tr>
+        '''                       <tr>
                        <td>
-                          <p>{rank}</p>
+                          <p>5</p>
                           <span class="date label label-default">Apr 3, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
-                                BM25 with TongSearch Reasoner 7B Reasoning
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a> with <a class="link" href="https://huggingface.co/qratosone/TongSearch_Reasoner_7B">TongSearch Reasoner 7B</a> Reasoning
                                 <p style="font-size: 15;"> <i> Beijing Institute for General Artificial Intelligence (BIGAI) </i> </p>
                               </td>
                        <td><b>26.9</b></td>
