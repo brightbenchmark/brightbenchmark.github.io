@@ -153,6 +153,22 @@ strs += [[
     '''                    <tr>
                    <td>
                       <p>{rank}</p>
+                      <span class="date label label-default">Apr 29, 2025</span>
+                   </td>
+                          <td style="word-break:break-word;">
+                            <a class="link" href="https://arxiv.org/pdf/2504.20595">ReasonIR with reranker</a>
+                            <p style="font-size: 15;"> <i> Meta, University of Washington, etc. </i> </p>
+                          </td>
+                   <td><b>36.9</b></td>
+                </tr>''',
+    {
+        'score': 36.9
+    }
+],
+    [
+    '''                    <tr>
+                   <td>
+                      <p>{rank}</p>
                       <span class="date label label-default">Oct 22, 2024</span>
                    </td>
                           <td style="word-break:break-word;">
