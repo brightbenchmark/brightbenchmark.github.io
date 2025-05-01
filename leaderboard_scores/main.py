@@ -153,6 +153,22 @@ strs += [[
     '''                    <tr>
                    <td>
                       <p>{rank}</p>
+                      <span class="date label label-default">Apr 30, 2025</span>
+                   </td>
+                          <td style="word-break:break-word;">
+                            <a class="link" href="https://arxiv.org/pdf/2504.03947">Qwen1.5-7B with InteRank-3B re-ranking</a>
+                            <p style="font-size: 15;"> <i> University of Massachusetts Amherst </i> </p>
+                          </td>
+                   <td><b>27.4</b></td>
+                </tr>''',
+    {
+        'score': 27.4
+    }
+],
+    [
+    '''                    <tr>
+                   <td>
+                      <p>{rank}</p>
                       <span class="date label label-default">Apr 29, 2025</span>
                    </td>
                           <td style="word-break:break-word;">
