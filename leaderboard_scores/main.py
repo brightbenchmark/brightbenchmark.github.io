@@ -218,7 +218,7 @@ strs += [[
     [
         '''                       <tr>
                        <td>
-                          <p>5</p>
+                          <p>{rank}</p>
                           <span class="date label label-default">May 10, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -234,7 +234,7 @@ strs += [[
 [
         '''                       <tr>
                        <td>
-                          <p>5</p>
+                          <p>{rank}</p>
                           <span class="date label label-default">May 10, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -250,7 +250,7 @@ strs += [[
     [
         '''                       <tr>
                        <td>
-                          <p>5</p>
+                          <p>{rank}</p>
                           <span class="date label label-default">May 10, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
