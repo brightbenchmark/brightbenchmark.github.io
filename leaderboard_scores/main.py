@@ -216,35 +216,51 @@ strs += [[
 ],
 
     [
-        '''                    <tr>
+        '''                       <tr>
                        <td>
-                          <p>{rank}</p>
-                          <span class="date label label-default">Mar 4, 2025</span>
+                          <p>5</p>
+                          <span class="date label label-default">May 10, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
-                                <a class="link" href="https://huggingface.co/qratosone/Reasoning-Searcher">bge-large-en-v1.5 with TongSearch Reasoner v0.1 Reasoning</a>
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a> with <a class="link" href="https://github.com/bigai-nlco/TongSearch_Reasoner">TongSearch Reasoner 7B</a> Reasoning
                                 <p style="font-size: 15;"> <i> Beijing Institute for General Artificial Intelligence (BIGAI) </i> </p>
                               </td>
-                       <td><b>24.4</b></td>
+                       <td><b>27.9</b></td>
                     </tr>''',
         {
-            'score': 24.4
+            'score': 27.9
+        }
+    ],
+[
+        '''                       <tr>
+                       <td>
+                          <p>5</p>
+                          <span class="date label label-default">May 10, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/ByteDance-Seed/Seed1.5-Embedding">Seed1.5-Embedding</a>
+                                <p style="font-size: 15;"> <i> ByteDance </i> </p>
+                              </td>
+                       <td><b>27.2</b></td>
+                    </tr>''',
+        {
+            'score': 27.2
         }
     ],
     [
         '''                       <tr>
                        <td>
                           <p>5</p>
-                          <span class="date label label-default">Apr 3, 2025</span>
+                          <span class="date label label-default">May 10, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
-                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a> with <a class="link" href="https://huggingface.co/qratosone/TongSearch_Reasoner_7B">TongSearch Reasoner 7B</a> Reasoning
+                                <a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a> with <a class="link" href="https://github.com/bigai-nlco/TongSearch_Reasoner">TongSearch Reasoner 1.5B</a> Reasoning
                                 <p style="font-size: 15;"> <i> Beijing Institute for General Artificial Intelligence (BIGAI) </i> </p>
                               </td>
-                       <td><b>26.9</b></td>
+                       <td><b>24.6</b></td>
                     </tr>''',
         {
-            'score': 26.9
+            'score': 24.6
         }
     ]
 ]
