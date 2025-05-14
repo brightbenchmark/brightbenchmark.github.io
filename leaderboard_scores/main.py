@@ -185,6 +185,22 @@ strs += [[
     '''                    <tr>
                    <td>
                       <p>{rank}</p>
+                      <span class="date label label-default">May 14, 2025</span>
+                   </td>
+                          <td style="word-break:break-word;">
+                            <a class="link" href="https://x.com/zach_nussbaum/status/1922427785710121186">BM25 with GPT4 reasoning and Qwen QWQ reranking</a>
+                            <p style="font-size: 15;"> <i> Zach Nussbaum (NomicAI) </i> </p>
+                          </td>
+                   <td><b>37.8</b></td>
+                </tr>''',
+    {
+        'score': 37.8
+    }
+],
+    [
+    '''                    <tr>
+                   <td>
+                      <p>{rank}</p>
                       <span class="date label label-default">Oct 22, 2024</span>
                    </td>
                           <td style="word-break:break-word;">
