@@ -278,6 +278,22 @@ strs += [[
         {
             'score': 24.6
         }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">May 29, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://huggingface.co/ielabgroup/Rank-R1-32B-v0.2">ReasonIR with Rank-R1</a>
+                                <p style="font-size: 15;"> <i> CSIRO, University of Waterloo, The University of Queensland </i> </p>
+                              </td>
+                       <td><b>38.8</b></td>
+                    </tr>''',
+        {
+            'score': 38.8
+        }
     ]
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
