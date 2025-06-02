@@ -294,6 +294,22 @@ strs += [[
         {
             'score': 38.8
         }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">June 2, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/jataware/ezbright/">XRR2</a>
+                                <p style="font-size: 15;"> <i> Jataware Corp </i> </p>
+                              </td>
+                       <td><b>40.3</b></td>
+                    </tr>''',
+        {
+            'score': 40.3
+        }
     ]
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
