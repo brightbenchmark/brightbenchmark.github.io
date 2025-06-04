@@ -310,6 +310,22 @@ strs += [[
         {
             'score': 40.3
         }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">June 4, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/bigai-nlco/TongSearch_Reasoner">ReasonIR with TongSearch Reasoner 7B Reasoning and reranker</a>
+                                <p style="font-size: 15;"> <i> Beijing Institute for General Artificial Intelligence (BIGAI) </i> </p>
+                              </td>
+                       <td><b>38.3</b></td>
+                    </tr>''',
+        {
+            'score': 38.3
+        }
     ]
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
