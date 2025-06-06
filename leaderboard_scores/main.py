@@ -326,6 +326,22 @@ strs += [[
         {
             'score': 38.3
         }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">June 5, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/Debrup-61/RaDeR">RaDeR with Qwen reranking</a>
+                                <p style="font-size: 15;"> <i> CIIR, University of Massachusetts Amherst </i> </p>
+                              </td>
+                       <td><b>39.2</b></td>
+                    </tr>''',
+        {
+            'score': 39.2
+        }
     ]
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
