@@ -367,7 +367,7 @@ strs += [[
                        </td>
                               <td style="word-break:break-word;">
                                 <a class="link" href="https://arxiv.org/abs/2508.07995">DIVER</a>
-                                <p style="font-size: 15;"> <i> Sun Yat-sen University & Ant Group </i> </p>
+                                <p style="font-size: 15;"> <i> Ant Group & Sun Yat-sen University </i> </p>
                               </td>
                        <td><b>41.6</b></td>
                     </tr>''',
