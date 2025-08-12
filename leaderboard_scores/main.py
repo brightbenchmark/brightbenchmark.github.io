@@ -347,7 +347,7 @@ strs += [[
         '''                       <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">Aug 12, 2025</span>
+                          <span class="date label label-default">Aug 9, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
                                 <a class="link" href="http://arxiv.org/abs/2508.07050">ReasonRank (rerank RaDer)</a>
@@ -357,6 +357,22 @@ strs += [[
                     </tr>''',
         {
             'score': 40.8
+        }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Aug 12, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://arxiv.org/abs/2508.07995">DIVER</a>
+                                <p style="font-size: 15;"> <i> Sun Yat-sen University & Ant Group </i> </p>
+                              </td>
+                       <td><b>41.6</b></td>
+                    </tr>''',
+        {
+            'score': 41.6
         }
     ]
 ]
