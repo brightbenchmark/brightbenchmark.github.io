@@ -374,6 +374,22 @@ strs += [[
         {
             'score': 41.6
         }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Aug 15, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner-preview</a>
+                                <p style="font-size: 15;"> <i> BAAI </i> </p>
+                              </td>
+                       <td><b>43.8</b></td>
+                    </tr>''',
+        {
+            'score': 43.8
+        }
     ]
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
