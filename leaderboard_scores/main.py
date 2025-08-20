@@ -379,16 +379,32 @@ strs += [[
         '''                       <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">Aug 15, 2025</span>
+                          <span class="date label label-default">Aug 21, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
-                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner-preview</a>
-                                <p style="font-size: 15;"> <i> BAAI </i> </p>
+                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner</a>
+                                <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
                               </td>
-                       <td><b>43.8</b></td>
+                       <td><b>45.2</b></td>
                     </tr>''',
         {
-            'score': 43.8
+            'score': 45.2
+        }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Aug 21, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner-Embed</a>
+                                <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
+                              </td>
+                       <td><b>32.5</b></td>
+                    </tr>''',
+        {
+            'score': 32.5
         }
     ]
 ]
