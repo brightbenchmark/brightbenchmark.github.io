@@ -363,16 +363,16 @@ strs += [[
         '''                       <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">Aug 12, 2025</span>
+                          <span class="date label label-default">Aug 27, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
                                 <a class="link" href="https://arxiv.org/abs/2508.07995">DIVER</a>
                                 <p style="font-size: 15;"> <i> Ant Group & Sun Yat-sen University </i> </p>
                               </td>
-                       <td><b>41.6</b></td>
+                       <td><b>45.8</b></td>
                     </tr>''',
         {
-            'score': 41.6
+            'score': 45.8
         }
     ],
     [
