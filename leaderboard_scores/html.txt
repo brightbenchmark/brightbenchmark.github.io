@@ -1,6 +1,18 @@
                        <tr>
                        <td>
                           <p>1</p>
+                          <span class="date label label-default">Oct 13, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/VectorSpaceLab/agentic-search/tree/main/BGE-Reasoner">BGE-Reasoner-0928</a>
+                                <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
+                              </td>
+                       <td><b>46.4</b></td>
+                    </tr>
+
+                       <tr>
+                       <td>
+                          <p>2</p>
                           <span class="date label label-default">Aug 27, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -8,18 +20,6 @@
                                 <p style="font-size: 15;"> <i> Ant Group & Sun Yat-sen University </i> </p>
                               </td>
                        <td><b>45.8</b></td>
-                    </tr>
-
-                       <tr>
-                       <td>
-                          <p>2</p>
-                          <span class="date label label-default">Aug 21, 2025</span>
-                       </td>
-                              <td style="word-break:break-word;">
-                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner</a>
-                                <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
-                              </td>
-                       <td><b>45.2</b></td>
                     </tr>
 
                        <tr>
@@ -82,9 +82,21 @@
                        <td><b>38.3</b></td>
                     </tr>
 
+                       <tr>
+                       <td>
+                          <p>8</p>
+                          <span class="date label label-default">Oct 13, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/VectorSpaceLab/agentic-search/tree/main/ReasonEmbed">BGE-Reasoner-Embed-0928</a>
+                                <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
+                              </td>
+                       <td><b>38.1</b></td>
+                    </tr>
+
                     <tr>
                    <td>
-                      <p>8</p>
+                      <p>9</p>
                       <span class="date label label-default">May 14, 2025</span>
                    </td>
                           <td style="word-break:break-word;">
@@ -96,7 +108,7 @@
 
                     <tr>
                    <td>
-                      <p>9</p>
+                      <p>10</p>
                       <span class="date label label-default">Apr 29, 2025</span>
                    </td>
                           <td style="word-break:break-word;">
@@ -108,7 +120,7 @@
 
                     <tr>
                    <td>
-                      <p>10</p>
+                      <p>11</p>
                       <span class="date label label-default">Oct 22, 2024</span>
                    </td>
                           <td style="word-break:break-word;">
@@ -117,18 +129,6 @@
                           </td>
                    <td><b>35.8</b></td>
                 </tr>
-
-                       <tr>
-                       <td>
-                          <p>11</p>
-                          <span class="date label label-default">Aug 21, 2025</span>
-                       </td>
-                              <td style="word-break:break-word;">
-                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner-Embed</a>
-                                <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
-                              </td>
-                       <td><b>32.5</b></td>
-                    </tr>
 
                     <tr>
                    <td>

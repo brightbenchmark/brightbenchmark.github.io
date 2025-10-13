@@ -379,32 +379,32 @@ strs += [[
         '''                       <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">Aug 21, 2025</span>
+                          <span class="date label label-default">Oct 13, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
-                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner</a>
+                                <a class="link" href="https://github.com/VectorSpaceLab/agentic-search/tree/main/BGE-Reasoner">BGE-Reasoner-0928</a>
                                 <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
                               </td>
-                       <td><b>45.2</b></td>
+                       <td><b>46.4</b></td>
                     </tr>''',
         {
-            'score': 45.2
+            'score': 46.4
         }
     ],
     [
         '''                       <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">Aug 21, 2025</span>
+                          <span class="date label label-default">Oct 13, 2025</span>
                        </td>
                               <td style="word-break:break-word;">
-                                <a class="link" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Reasoner">BGE-Reasoner-Embed</a>
+                                <a class="link" href="https://github.com/VectorSpaceLab/agentic-search/tree/main/ReasonEmbed">BGE-Reasoner-Embed-0928</a>
                                 <p style="font-size: 15;"> <i> USTC & BUPT & BAAI </i> </p>
                               </td>
-                       <td><b>32.5</b></td>
+                       <td><b>38.1</b></td>
                     </tr>''',
         {
-            'score': 32.5
+            'score': 38.1
         }
     ]
 ]
