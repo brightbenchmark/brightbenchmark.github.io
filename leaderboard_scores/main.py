@@ -406,6 +406,22 @@ strs += [[
         {
             'score': 38.1
         }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Oct 17, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/nilesh2797/lattice">Lattice Hierarchical Retrieval</a>
+                                <p style="font-size: 15;"> <i> UT Austin & UCLA & Google </i> </p>
+                              </td>
+                       <td><b>42.1</b></td>
+                    </tr>''',
+        {
+            'score': 42.1
+        }
     ]
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
