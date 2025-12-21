@@ -438,7 +438,23 @@ strs += [[
         {
             'score': 28.0
         }
-    ]
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Dec 20, 2025</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href=" https://yaoyichen.github.io/INF-X-Retriever/">INF-X-Retriever</a>
+                                <p style="font-size: 15;"> <i>  INF </i> </p>
+                              </td>
+                       <td><b>63.4</b></td>
+                    </tr>''',
+        {
+            'score': 63.4
+        }
+    ],
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
 print(len(strs))
