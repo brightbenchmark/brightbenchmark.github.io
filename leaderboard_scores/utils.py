@@ -87,7 +87,11 @@ retrieval_model_map = {
     },
     'sbert': {
         'model': '<a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>',
-        'institution': 'Technische Universität Darmstadt'
+        'institution': 'Technische Universität Darmstadt',
+    },
+    'INF-X-Retriever': {
+        'model': '<a class="link" href="https://yaoyichen.github.io/INF-X-Retriever">INF-X-Retriever</a>',
+        'institution': 'INF',
     }
 }
 reasoning_model_map = {

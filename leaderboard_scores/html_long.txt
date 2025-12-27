@@ -4,15 +4,27 @@
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
+                                <a class="link" href="https://yaoyichen.github.io/INF-X-Retriever">INF-X-Retriever</a>
+                                <p style="font-size: 15;"> <i> INF </i> </p>
+                              </td>
+                       <td><b>54.6</b></td>
+                    </tr>
+
+                    <tr>
+                       <td>
+                          <p>2</p>
+                          <span class="date label label-default">July 11, 2024</span>
+                       </td>
+                              <td style="word-break:break-word;">
                                 <a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings">Google-Gecko-Text_Embedding-004</a>
-                                <p style="font-size: 15;"> <i> Google cloud AI </i> (with Max-Mean Aggregation) </p>
+                                <p style="font-size: 15;"> <i> Google cloud AI </i> </p>
                               </td>
                        <td><b>33.2</b></td>
                     </tr>
 
                     <tr>
                        <td>
-                          <p>2</p>
+                          <p>3</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -24,7 +36,7 @@
 
                     <tr>
                        <td>
-                          <p>3</p>
+                          <p>4</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -36,7 +48,7 @@
 
                     <tr>
                        <td>
-                          <p>4</p>
+                          <p>5</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -48,7 +60,7 @@
 
                     <tr>
                        <td>
-                          <p>5</p>
+                          <p>6</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -60,7 +72,7 @@
 
                     <tr>
                        <td>
-                          <p>6</p>
+                          <p>7</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -72,7 +84,7 @@
 
                     <tr>
                        <td>
-                          <p>7</p>
+                          <p>8</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -84,7 +96,7 @@
 
                     <tr>
                        <td>
-                          <p>8</p>
+                          <p>9</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -96,7 +108,7 @@
 
                     <tr>
                        <td>
-                          <p>9</p>
+                          <p>10</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -108,7 +120,7 @@
 
                     <tr>
                        <td>
-                          <p>10</p>
+                          <p>11</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -120,7 +132,7 @@
 
                     <tr>
                        <td>
-                          <p>11</p>
+                          <p>12</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -132,7 +144,7 @@
 
                     <tr>
                        <td>
-                          <p>12</p>
+                          <p>13</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -144,7 +156,7 @@
 
                     <tr>
                        <td>
-                          <p>13</p>
+                          <p>14</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
@@ -156,7 +168,7 @@
 
                     <tr>
                        <td>
-                          <p>14</p>
+                          <p>15</p>
                           <span class="date label label-default">July 11, 2024</span>
                        </td>
                               <td style="word-break:break-word;">
