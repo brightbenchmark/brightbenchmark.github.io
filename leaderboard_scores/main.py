@@ -455,6 +455,22 @@ strs += [[
             'score': 63.4
         }
     ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Feb 13, 2026</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href=" https://github.com/NVIDIA/NeMo-Retriever/blob/main/retrieval-bench/submissions/bright_agentic.md/">NeMo Retriever's Agentic Retrieval</a>
+                                <p style="font-size: 15;"> <i>  NVIDIA </i> </p>
+                              </td>
+                       <td><b>50.9</b></td>
+                    </tr>''',
+        {
+            'score': 50.9
+        }
+    ],
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
 print(len(strs))
