@@ -459,7 +459,7 @@ strs += [[
         '''                       <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">Feb 13, 2026</span>
+                          <span class="date label label-default">Mar 13, 2026</span>
                        </td>
                               <td style="word-break:break-word;">
                                 <a class="link" href=" https://github.com/NVIDIA/NeMo-Retriever/blob/main/retrieval-bench/submissions/bright_agentic.md/">NeMo Retriever's Agentic Retrieval</a>
