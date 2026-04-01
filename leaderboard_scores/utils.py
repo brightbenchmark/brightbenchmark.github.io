@@ -1,7 +1,7 @@
 reasoning_template = '''                    <tr>
                    <td>
                       <p>{rank}</p>
-                      <span class="date label label-default">July 11, 2024</span>
+                      <span class="date label label-default">{date}</span>
                    </td>
                           <td style="word-break:break-word;">
                             {retrieval_model}, with {reasoning_model} reasoning
@@ -12,7 +12,7 @@ reasoning_template = '''                    <tr>
 reranking_template = '''                    <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">July 11, 2024</span>
+                          <span class="date label label-default">{date}</span>
                        </td>
                               <td style="word-break:break-word;">
                                 {retrieval_model}, {topk} reranking by {reranking_model}
@@ -23,7 +23,7 @@ reranking_template = '''                    <tr>
 raw_template = '''                    <tr>
                        <td>
                           <p>{rank}</p>
-                          <span class="date label label-default">July 11, 2024</span>
+                          <span class="date label label-default">{date}</span>
                        </td>
                               <td style="word-break:break-word;">
                                 {retrieval_model}
@@ -35,63 +35,83 @@ raw_template = '''                    <tr>
 retrieval_model_map = {
     'Google-Gecko-Text_Embedding-004': {
         'model': '<a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings">Google-Gecko-Text_Embedding-004</a>',
-        'institution': 'Google cloud AI'
+        'institution': 'Google cloud AI',
+        'date': 'July 11, 2024'
     },
     'bm25': {
         'model': '<a class="link" href="https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf">BM25</a>',
-        'institution': 'Microsoft'
+        'institution': 'Microsoft',
+        'date': 'July 11, 2024'
     },
     'qwen': {
         'model': '<a class="link" href="https://huggingface.co/Alibaba-NLP/gte-Qwen1.5-7B-instruct">gte-Qwen1.5-7B-instruct</a>',
-        'institution': 'Alibaba'
+        'institution': 'Alibaba',
+        'date': 'July 11, 2024'
     },
     'e5': {
         'model': '<a class="link" href="https://huggingface.co/intfloat/e5-mistral-7b-instruct">e5-mistral-7b-instruct</a>',
-        'institution': 'Microsoft'
+        'institution': 'Microsoft',
+        'date': 'July 11, 2024'
     },
     'sfr': {
         'model': '<a class="link" href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral">SFR-Embedding-Mistral</a>',
-        'institution': 'Salesforce'
+        'institution': 'Salesforce',
+        'date': 'July 11, 2024'
     },
     'inst-xl': {
         'model': '<a class="link" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a>',
-        'institution': 'The University of Hong Kong, University of Washington'
+        'institution': 'The University of Hong Kong, University of Washington',
+        'date': 'July 11, 2024'
     },
     'google': {
         'model': '<a class="link" href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#latest_Retrievers">google-gecko.text-embedding-preview-0409, dim=768</a>',
-        'institution': 'Google'
+        'institution': 'Google',
+        'date': 'July 11, 2024'
     },
     'bge': {
         'model': '<a class="link" href="https://huggingface.co/BAAI/bge-large-en-v1.5">bge-large-en-v1.5</a>',
-        'institution': 'Beijing Academy of Artificial Intelligence'
+        'institution': 'Beijing Academy of Artificial Intelligence',
+        'date': 'July 11, 2024'
     },
     'grit': {
         'model': '<a class="link" href="https://huggingface.co/GritLM/GritLM-7B">GritLM-7B</a>',
-        'institution': 'ContextualAI, The University of Hong Kong, Microsoft'
+        'institution': 'ContextualAI, The University of Hong Kong, Microsoft',
+        'date': 'July 11, 2024'
     },
     'cohere': {
         'model': '<a class="link" href="https://huggingface.co/Cohere/Cohere-embed-english-v3.0">Cohere-embed-english-v3.0</a>',
-        'institution': 'Cohere'
+        'institution': 'Cohere',
+        'date': 'July 11, 2024'
     },
     'inst-l': {
         'model': '<a class="link" href="https://huggingface.co/hkunlp/instructor-large">instructor-large</a>',
-        'institution': 'The University of Hong Kong, University of Washington'
+        'institution': 'The University of Hong Kong, University of Washington',
+        'date': 'July 11, 2024'
     },
     'openai': {
         'model': '<a class="link" href="https://openai.com/blog/new-embedding-Retrievers-and-api-updates">text-embedding-3-large</a>',
-        'institution': 'OpenAI'
+        'institution': 'OpenAI',
+        'date': 'July 11, 2024'
     },
     'voyage': {
         'model': '<a class="link" href="https://docs.voyageai.com/embeddings/">voyage-large-2-instruct</a>',
-        'institution': 'Voyage AI'
+        'institution': 'Voyage AI',
+        'date': 'July 11, 2024'
     },
     'sbert': {
         'model': '<a class="link" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">sentence-transformers</a>',
         'institution': 'Technische Universität Darmstadt',
+        'date': 'July 11, 2024'
     },
     'INF-X-Retriever': {
         'model': '<a class="link" href="https://yaoyichen.github.io/INF-X-Retriever">INF-X-Retriever</a>',
         'institution': 'INF',
+        'date': 'July 11, 2024'
+    },
+    'MRE-T1': {
+        'model': '<a class="link" href="https://huggingface.co/ForwardAILabs/MRE-T1">MRE-T1</a>',
+        'institution': 'Forward AI Labs',
+        'date': 'Apr 1, 2026'
     }
 }
 reasoning_model_map = {

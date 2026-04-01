@@ -14,7 +14,8 @@ scores = {
         'voyage': 24.6,
         'google': 22.4,
         'Google-Gecko-Text_Embedding-004': 33.2,
-        'INF-X-Retriever': 54.6
+        'INF-X-Retriever': 54.6,
+        'MRE-T1': 35.1
     }
 }
 
@@ -26,7 +27,8 @@ for k,v in scores.items():
             strs.append([raw_template,{
                 'retrieval_model': retrieval_model_map[model]['model'],
                 'institution':  retrieval_model_map[model]['institution'],
-                'score': score
+                'score': score,
+                'date': retrieval_model_map[model]['date']
             }])
     else:
         raise ValueError('unsupported')
