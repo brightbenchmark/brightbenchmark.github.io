@@ -112,6 +112,11 @@ retrieval_model_map = {
         'model': '<a class="link" href="https://huggingface.co/ForwardAILabs/MRE-T1">MRE-T1</a>',
         'institution': 'Forward AI Labs',
         'date': 'Apr 1, 2026'
+    },
+    'Mira-Reasoning-Retrieval': {
+        'model': '<a class="link" href="https://wanggz.github.io/mira-reasoning-retrieval/">Mira-Reasoning-Retrieval</a>',
+        'institution': 'Forward AI Labs',
+        'date': 'Apr 22, 2026'
     }
 }
 reasoning_model_map = {

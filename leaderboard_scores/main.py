@@ -125,7 +125,8 @@ for k,v in scores.items():
             strs.append([raw_template,{
                 'retrieval_model': retrieval_model_map[model]['model'],
                 'institution':  retrieval_model_map[model]['institution'],
-                'score': score
+                'score': score,
+                'date': 'July 11, 2024'
             }])
     elif 'reason' in k:
         cur_reasoning_model = k.split('-')[0]
@@ -134,7 +135,8 @@ for k,v in scores.items():
                 'retrieval_model': retrieval_model_map[model]['model'],
                 'institution': retrieval_model_map[model]['institution'],
                 'reasoning_model': reasoning_model_map[cur_reasoning_model],
-                'score': score
+                'score': score,
+                'date': 'July 11, 2024'
             }])
     elif 'rerank' in k:
         cur_retrieval_model = k.split('-')[0]
@@ -145,7 +147,8 @@ for k,v in scores.items():
                     'institution': retrieval_model_map[cur_retrieval_model]['institution'],
                     'topk': topk,
                     'reranking_model': reranking_model_map[rerank_model],
-                    'score': score
+                    'score': score,
+                    'date': 'July 11, 2024'
                 }])
     else:
         raise ValueError('unsupported')
@@ -501,6 +504,22 @@ strs += [[
                     </tr>''',
         {
             'score': 39.6
+        }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Apr 22, 2026</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://wanggz.github.io/mira-reasoning-retrieval">Mira-Reasoning-Retrieval</a>
+                                <p style="font-size: 15;"> <i>  Forward AI Labs </i> </p>
+                              </td>
+                       <td><b>66.9</b></td>
+                    </tr>''',
+        {
+            'score': 66.9
         }
     ],
 ]
