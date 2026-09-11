@@ -522,6 +522,22 @@ strs += [[
             'score': 66.9
         }
     ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Sept 11, 2026</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://arxiv.org/pdf/2608.14107">RGLT</a>
+                                <p style="font-size: 15;"> <i> BUPT & Meituan </i> </p>
+                              </td>
+                       <td><b>34.2</b></td>
+                    </tr>''',
+        {
+            'score': 34.2
+        }
+    ],
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
 print(len(strs))
