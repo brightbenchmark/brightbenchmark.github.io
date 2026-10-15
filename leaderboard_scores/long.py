@@ -14,7 +14,7 @@ scores = {
         'voyage': 24.6,
         'google': 22.4,
         'Google-Gecko-Text_Embedding-004': 33.2,
-        'INF-X-Retriever': 54.6,
+        'INF-X-Retriever': 60.9,
         'MRE-T1': 35.1,
         'Mira-Reasoning-Retrieval': 56.0
     }
