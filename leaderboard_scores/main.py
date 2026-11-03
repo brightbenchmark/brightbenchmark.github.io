@@ -538,6 +538,38 @@ strs += [[
             'score': 34.2
         }
     ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Nov 3, 2026</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/hemanth/piragi">piragi</a>, with <a class="link" href="https://openai.com/index/gpt-4/">GPT-4</a> reasoning
+                                <p style="font-size: 15;"> <i> Hemanth HM </i> </p>
+                              </td>
+                       <td><b>32.6</b></td>
+                    </tr>''',
+        {
+            'score': 32.6
+        }
+    ],
+    [
+        '''                       <tr>
+                       <td>
+                          <p>{rank}</p>
+                          <span class="date label label-default">Nov 3, 2026</span>
+                       </td>
+                              <td style="word-break:break-word;">
+                                <a class="link" href="https://github.com/hemanth/piragi">piragi</a>, with <a class="link" href="https://huggingface.co/Qwen/Qwen2.5-7B-Instruct">Qwen2.5-7B-Instruct</a> ThinkThenRetrieve
+                                <p style="font-size: 15;"> <i> Hemanth HM </i> </p>
+                              </td>
+                       <td><b>31.4</b></td>
+                    </tr>''',
+        {
+            'score': 31.4
+        }
+    ],
 ]
 strs = sorted(strs,key=lambda x:x[1]['score'],reverse=True)
 print(len(strs))
